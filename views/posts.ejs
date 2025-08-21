@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs')  %>
+<body id="posts-body">
+        <%- include('partials/navbar.ejs')  %>
+    <div id="post-section">
+        <h1><%= pTitle %></h1>
+    <p><%= pContent %></p>
+
+    <form action="/delete" method="post">
+        <input type="hidden" name="pIndex" value="<%= pIndex %>">
+        <button class="button" type="submit" formmethod="post">Delete post</button>
+    </form>
+    <form action="/edit" method="post">
+        <input type="hidden" name="pIndex" value="<%= pIndex %>">
+        <button class="button " type="submit" formmethod="post">Edit Post</button>
+    </form>
+    </div>
+</body>
+</html>
+
+<%- include('partials/footer.ejs') %>

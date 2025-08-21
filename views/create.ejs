@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs')  %>
+<body id="create-body">
+<%- include('partials/navbar.ejs')  %>
+    <div id="create-section">
+        <h1>Create Post</h1>
+        <form action="/submit" method="post">
+            <label class="label"for="pTitle">Post Title:</label><br>
+            <input type="text" id="pTitle" name="pTitle" size="80"><br>
+            <label class="label"for="pContent" >Post Content:</label><br>
+            <textarea id="pContent" name="pContent" rows="30" cols="100"></textarea><br>
+            <input class="button" type="submit" value="Submit Post">
+        </form>
+    </div>
+    
+</body>
+</html>
+
+<%- include('partials/footer.ejs') %>

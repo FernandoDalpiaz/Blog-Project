@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+    
+}
+
+h1 {
+    margin: 0;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-bar-item {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-bar-item:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+#content-section {
+    padding: 50px;
+    padding-left: 100px;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+#posts-section {
+    padding: 50px;
+    padding-left: 100px;
+}
+
+#footer-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.post-list-item {
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: lightgrey;
+}
+
+.post-list-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+#create-body {
+    background-color: whitesmoke;
+}
+
+#create-section {
+     padding: 50px;
+    padding-left: 100px;
+    background-color: whitesmoke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#posts-body {
+    background-color: whitesmoke;
+}
+
+#post-section {
+     padding: 50px;
+    padding-left: 100px;
+    background-color: whitesmoke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

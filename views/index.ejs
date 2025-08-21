@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs')  %>
+<body>
+    <%- include('partials/navbar.ejs')  %>
+    <div id="content-section">
+        <h1>Fernando's Blog</h1>
+        <h3>Feel free to read, edit and even create your own posts!</h2>
+        <br>
+    </div>
+
+    <div id="posts-section">
+        <h2>Posts List</h2>
+        <ul>
+        <% if (locals.pTitle) { %>
+            <% for( let index = 0; index < pTitle.length; index++ ) { %>
+                <li>
+                    <form action="/posts" method="post">
+                        <input type="hidden" name="pTitle" value="<%= pTitle[index]  %>">
+                        <input type="hidden" name="pContent" value="<%= pContent[index] %>">
+                        <input type="hidden" name="pIndex" value="<%= index %>">
+                        <button class="post-list-item" type="submit" formmethod="post"> <%= pTitle[index] %> </button>
+                    </form>
+                </li>
+            <% } %>
+        <% } else { %>
+            <h3>There aren't any posts yet.</h3>
+        <% } %> 
+    </div>
+    
+</body>
+</html>
+
+<%- include('partials/footer.ejs') %>
